@@ -2,8 +2,17 @@
 	"name": "pac-stac-backend",
 	"version": "0.0.1",
 	"description": "Payload project created from ts-blog template",
+	"repository": {
+		"directory": "app/backend",
+		"type": "git",
+		"url": "https://github.com/astro-starters/PAC-STAC.git"
+	},
+	"homepage": "https://github.com/astro-starters/PAC-STAC#readme",
+	"bugs": {
+		"url": "https://github.com/astro-starters/PAC-STAC/issues"
+	},
 	"license": "MIT",
-	"main": "dist/server.js",
+	"main": "./dist/server.js",
 	"scripts": {
 		"build": "npm run copyfiles && npm run build:payload && npm run build:server",
 		"build:payload": "cross-env PAYLOAD_CONFIG_PATH=src/payload.config.ts payload build",
