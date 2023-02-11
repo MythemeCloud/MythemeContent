@@ -1,24 +1,21 @@
 import express from "express";
 import payload from "payload";
+import env from "./lib/env";
 
-require("dotenv").config();
 const app = express();
 
-// Redirect root to Admin panel
 app.get("/", (_, res) => {
 	res.redirect("/admin");
 });
 
-// Initialize Payload
 payload.init({
-	secret: process.env.PAYLOAD_SECRET,
-	mongoURL: process.env.MONGODB_URI,
+	secret: env["PAYLOAD_SECRET"],
+	mongoURL: env["MONGODB_URI"],
 	express: app,
 	onInit: () => {
 		payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`);
 	},
 });
 
-// Add your own express routes here
-
+// rome-ignore lint/nursery/noPrecisionLoss:
 app.listen(3000);

@@ -1,6 +1,6 @@
-import { CollectionConfig } from "payload/types";
+import type { CollectionConfig } from "payload/types";
 
-const Users: CollectionConfig = {
+export default {
 	slug: "users",
 	auth: true,
 	admin: {
@@ -10,12 +10,9 @@ const Users: CollectionConfig = {
 		read: () => true,
 	},
 	fields: [
-		// Email added by default
 		{
 			name: "name",
 			type: "text",
 		},
 	],
-};
-
-export default Users;
+} satisfies CollectionConfig;
