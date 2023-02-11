@@ -1,4 +1,4 @@
-# pac-stac-backend
+# pac-stac-content
 
 This project was created using create-payload-app using the ts-blog template.
 

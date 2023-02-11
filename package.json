@@ -1,9 +1,9 @@
 {
-	"name": "pac-stac-backend",
+	"name": "pac-stac-content",
 	"version": "0.0.1",
 	"description": "Payload project created from ts-blog template",
 	"repository": {
-		"directory": "app/backend",
+		"directory": "app/content",
 		"type": "git",
 		"url": "https://github.com/astro-starters/PAC-STAC.git"
 	},
