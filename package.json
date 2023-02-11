@@ -1,15 +1,13 @@
 {
 	"name": "pac-stac-content",
 	"version": "0.0.1",
-	"description": "Payload project created from ts-blog template",
 	"repository": {
-		"directory": "app/content",
 		"type": "git",
-		"url": "https://github.com/astro-starters/PAC-STAC.git"
+		"url": "https://github.com/astro-starters/pac-stac-content.git"
 	},
-	"homepage": "https://github.com/astro-starters/PAC-STAC#readme",
+	"homepage": "https://github.com/astro-starters/pac-stac-content#readme",
 	"bugs": {
-		"url": "https://github.com/astro-starters/PAC-STAC/issues"
+		"url": "https://github.com/astro-starters/pac-stac-content/issues"
 	},
 	"license": "MIT",
 	"main": "./dist/server.js",
@@ -26,7 +24,8 @@
 	"dependencies": {
 		"dotenv": "16.0.3",
 		"express": "4.18.2",
-		"payload": "1.6.9"
+		"payload": "1.6.9",
+		"zod": "3.20.6"
 	},
 	"devDependencies": {
 		"@lightrix/config": "0.0.7",
