@@ -1,5 +1,5 @@
-import env from "./lib/env";
 import { resolve } from "path";
+import env from "./lib/env";
 
 import Users from "./collections/Users";
 
